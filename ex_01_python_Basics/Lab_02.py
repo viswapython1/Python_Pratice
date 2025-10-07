@@ -1,4 +1,29 @@
 # ===== Python Variables Demonstration =====
+"""
+Topics we’ll cover in one program
+
+Variable declaration
+
+Data types (int, float, string, bool, complex, list, tuple, set, dict)
+
+Multiple assignments
+
+Type casting
+
+Constants (by convention)
+
+Dynamic typing (changing variable type)
+
+Global & local variables
+
+Deleting variables (del)
+
+f-string formatting
+
+id() and type() usage
+
+"""
+
 
 # 1️⃣ Simple variable declarations
 name = "Viswa"
