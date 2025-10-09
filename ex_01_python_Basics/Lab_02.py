@@ -1,5 +1,5 @@
 # ===== Python Variables Demonstration =====
-"""
+usage_ = """
 Topics we’ll cover in one program
 
 Variable declaration
