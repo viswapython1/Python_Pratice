@@ -61,6 +61,7 @@ def show_variables():
     print("\nInside function:")
     print("Local:", local_var)
     print("Global (accessed inside):", global_var)
+    print("Just Checking ====>")
 
 show_variables()
 
