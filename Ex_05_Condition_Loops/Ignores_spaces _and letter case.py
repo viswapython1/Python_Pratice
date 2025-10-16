@@ -10,4 +10,4 @@ if expected_title.strip().lower() == actual_title.strip().lower():
 else:
     print("❌ Test Case Failed")
     print(f"Expected: '{expected_title}'")
-    print(f"Actual:   '{actual_title}'")
+    print(f"Actual_Result:   '{actual_title}'")

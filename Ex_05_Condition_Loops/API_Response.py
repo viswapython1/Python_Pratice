@@ -23,4 +23,4 @@ elif response == 500:
 elif response == 503:
     print("❌ Service Unavailable (503)")
 else:
-    print(f"⚠️ Unknown Response Code: {response}")
+    print(f"⚠️ Unknown the Response Code: {response}")

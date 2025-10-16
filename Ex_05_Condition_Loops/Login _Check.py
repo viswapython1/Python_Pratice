@@ -23,4 +23,4 @@ for attempt in range(3):
     else:
         print(f"❌ Wrong credentials! Attempts left: {2 - attempt}")
 else:
-    print("🔒 Account locked due to too many failed attempts.")
+    print("🔒 Account locked due to too many failed attempts _so many times.")
