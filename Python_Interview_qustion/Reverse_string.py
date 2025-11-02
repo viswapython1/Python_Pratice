@@ -5,11 +5,11 @@ a string without using built-in functions like [::-1], reversed(), or .join().""
 Each time the loop runs, it takes one character from s and adds
  it before the previous characters — effectively reversing the order."""
 
-s = input("Enter a string: ")
-rev = ""
-for ch in s:
-    rev = ch + s
-print(rev)
+# s = input("Enter a string: ")
+# rev = ""
+# for ch in s:
+#     rev = ch + s
+# print(rev)
 
 
 # def reverse_string(s):
@@ -22,26 +22,26 @@ print(rev)
 # s = "Python"
 # print("Reversed:", reverse_string(s))
 
-def reverse(s):
-    if len(s) == 0:  # If the string is empty, return it immediately.
-        return s  # This stops the recursion from running forever.
-    else:
-        return reverse(s[1:]) + s[0]  # s[1:] means “string without the first character.”
-        # s[0] means “the first character.”
-    """You call the same function again on the smaller string (s[1:])
-    and when it returns, you add back the first character at the end."""
+# def reverse(s):
+#     if len(s) == 0:  # If the string is empty, return it immediately.
+#         return s  # This stops the recursion from running forever.
+#     else:
+#         return reverse(s[1:]) + s[0]  # s[1:] means “string without the first character.”
+#         # s[0] means “the first character.”
+#     """You call the same function again on the smaller string (s[1:])
+#     and when it returns, you add back the first character at the end."""
 
 
-s = input("Enter a string: ")
-print("reversed : ", reverse(s))
-# -------------------------------------
-s = "Python"
-rev = "".join([s[i] for i in range(len(s) - 1, -1, -1)])
-print("Reversed:", rev)
-
-Name = input("Enter a name: ")
-rev = "".join([s[i] for i in range(len(s) - 1, -1, -1)])
-print("Reversed:", rev)
+# s = input("Enter a string: ")
+# print("reversed : ", reverse(s))
+# # -------------------------------------
+# s = "Python"
+# rev = "".join([s[i] for i in range(len(s) - 1, -1, -1)])
+# print("Reversed:", rev)
+#
+# Name = input("Enter a name: ")
+# rev = "".join([s[i] for i in range(len(s) - 1, -1, -1)])
+# print("Reversed:", rev)
 # ----------------------------------
 """range(len(s)-1, -1, -1)
 This creates a sequence of indexes in reverse order.
@@ -51,13 +51,32 @@ len(s)-1	start from index 5 (last character)
 range(5, -1, -1) → [5, 4, 3, 2, 1, 0]
 """
 
-s = input("Enter a string: ")
-alphabets = ""
-num = ""
-for ch in s:
-    if ch.isalpha():
-        alphabets += ch
-    elif ch.isdigit():
-        num += ch
-print(alphabets)
-print(num)
+
+# s = input("Enter a string: ")
+# alphabets = ""
+# num = ""
+# for ch in s:
+#     if ch.isalpha():
+#         alphabets += ch
+#     elif ch.isdigit():
+#         num += ch
+# print(alphabets)
+# print(num)
+
+
+# def reverse_string():
+#     text = input("Enter a string: ")
+#     reversed_text = text[::-1]
+#     print("revered the string: ", reversed_text)
+#
+#
+# reverse_string()
+
+
+def get_reversed(text):
+    return text[::-1]
+
+
+word = input("Enter a word: ")
+print("revered, word : ", get_reversed(word))
+# print("reversed, ", get_reversed(word[::-1]))
